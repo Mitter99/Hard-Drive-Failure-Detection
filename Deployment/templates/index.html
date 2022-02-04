@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:DodgerBlue;">
+    <h1 style="text-align:center;" >Hard Disk Failure Detection</h1>
+<div>
+  
+  <form action="/predict" method="POST">
+
+    <label for="SMART_5">Relocated Sector Count</label>
+    <br>
+    <input type="text" id="SMART_5" name="SMART_5" placeholder= "SMART-5">
+    <br>
+    <label for="SMART_9">Power on Hours</label>
+    <br>
+    <input type="text" id="SMART_9" name="SMART_9"  placeholder= "SMART-9"/>
+    <br>
+    <label for="SMART_187">Reported Uncorrectable Errors </label>
+    <br>
+    <input type="text" id="SMART_187" name="SMART-187"  placeholder= "SMART-187"/>
+    <br>
+    <label for="SMART_188">Command Timeout</label>
+    <br>
+    <input type="text" id="SMART_188" name="SMART-188" placeholder= "SMART-188" />
+    <br>
+    <label for="SMART_193">Load/Unload Cycle Count</label>
+    <br>
+    <input type="text" id="SMART_193" name="SMART-193" placeholder= "SMART-193" />
+    <br>
+    <label for="SMART_194">Temperature in Celsius</label>
+    <br>
+    <input type="text" id="SMART_194" name="SMART-194" placeholder= "SMART-194" />
+    <br>
+    <label for="s_197">Current Pending Sector Count</label>
+    <br>
+    <input type="text" id="s_197" name="SMART-197" placeholder= "SMART-197" />
+    <br>
+    <label for="SMART_198">Uncorrectable Sector Count</label>
+    <br>
+    <input type="text" id="SMART_198" name="SMART-198"  placeholder= "SMART-198"/>
+    <br>
+    <label for="s_241">Total LBAs Written</label>
+    <br>
+    <input type="text" id="s_241" name="SMART-241"  placeholder= "SMART-241"/>
+    <br>
+    <label for="SMART_241">Total LBAs Read</label>
+    <br>
+    <input type="text" id="SMART_242" name="SMART-242"  placeholder= "SMART-242"/>
+    <br>
+    <br>
+    <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+  </form>
+</div>
+</body>
+</html>
