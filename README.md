@@ -63,6 +63,7 @@ The two methods are considered for handling imbalance data:
 ### Machine Learning
 
 I have used Decision Tree, Random Forest, Light GBM and Custom made model using Stacking method where all the model gave a satisfactory performance, but we chose Light-GBM as our model for deployment.
+
 ![1_BJxbUZjxAILqVcFs2Fw9yw](https://user-images.githubusercontent.com/66559374/159210798-af5d8aaf-757b-4321-a606-a8aff337df09.jpg)
 
 ## Blog: https://medium.com/@ayaanmitra/hard-drive-failure-detection-7ab7729be0c
