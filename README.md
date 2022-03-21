@@ -60,4 +60,11 @@ The two methods are considered for handling imbalance data:
 1. SMOTE: The technique uses oversampling the minority class by adding synthetic data points. The Imblearn library provides the SMOTE technique. It uses K-NN to create the synthetic samples for the dataset.
 2. Smoothing (Backtracking) method: This method is used to smooth the failure status. Here, we go back n days (5,10,15 days, etc.) and alter the failure status of those failed drives from running to fail (0->1). The advantage of using this method is that we can control the number of class-1 (fail) data points. In our case we have 387 class-1 (fail) data points, for n = 5 days there are 1,853 class-1 data points, for n = 10 days there are 3,613 class-1 data points, and for 15 days there are 5,642 class-1 data points. We can choose the same amount of class-0 (running) data points at random to create a balanced dataset. So, for a specific failed drive that has appeared multiple times in the dataset, we simply change their status for a few days without adding any synthetic data.
 
+### Machine Learning
+
+I have used Decision Tree, Random Forest, Light GBM and Custom made model using Stacking method where all the model gave a satisfactory performance, but we chose Light-GBM as our model for deployment.
+![1_BJxbUZjxAILqVcFs2Fw9yw](https://user-images.githubusercontent.com/66559374/159210798-af5d8aaf-757b-4321-a606-a8aff337df09.jpg)
+
+## Blog: https://medium.com/@ayaanmitra/hard-drive-failure-detection-7ab7729be0c
+## Heroku app: https://harddrive-api.herokuapp.com/index
 
